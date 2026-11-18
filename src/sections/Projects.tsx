@@ -81,12 +81,21 @@ export default function Projects({ items, previewLimit, viewAllTo }: ProjectsPro
               className="reveal group grid overflow-hidden rounded-3xl border border-line bg-card/80 lg:grid-cols-2"
             >
               <div
-                className={`relative aspect-[16/11] bg-gradient-to-br from-sage-soft/70 to-coral-soft/60 p-6 ${
+                className={`relative aspect-16/11 bg-linear-to-br from-sage-soft/70 to-coral-soft/60 p-6 ${
                   i % 2 ? 'lg:order-2' : ''
                 }`}
               >
                 <div className="h-full w-full transition-transform duration-700 group-hover:scale-[1.04]">
-                  <ProjectArt visual={project.visual} />
+                  {project.imageUrl ? (
+                    <img
+                      src={project.imageUrl}
+                      alt={`${project.name} preview`}
+                      className="h-full w-full rounded-2xl object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <ProjectArt visual={project.visual} />
+                  )}
                 </div>
               </div>
 

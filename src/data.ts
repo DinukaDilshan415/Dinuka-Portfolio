@@ -1,5 +1,4 @@
-// Update this file with your real links, education, experience, and project details.
-// Items marked "EDIT" are placeholders added to complete the site — replace them with your own details.
+
 import type {
   Certification,
   EducationItem,
@@ -14,11 +13,11 @@ export const profile: Profile = {
   name: 'Dinuka Dilshan Athapaththu',
   shortName: 'Dinuka',
   title: 'Software Engineer',
-  location: 'Sri Lanka',
+  location: '',
   email: 'dinukadilshan8026@gmail.com',
   github: 'https://github.com/DinukaDilshan415',
   linkedin: 'https://www.linkedin.com/in/dinuka-dilshan-athapaththu/',
-  // Replace these platform homepages with your profile or channel URLs.
+
   socialLinks: [
     { label: 'Facebook', href: 'https://www.facebook.com/dinuka.dilshan.415/' },
     { label: 'Instagram', href: 'https://www.instagram.com/dinuka_dilshan_/' },
@@ -26,19 +25,19 @@ export const profile: Profile = {
     { label: 'YouTube', href: 'https://www.youtube.com/' },
     { label: 'X', href: 'https://x.com/DinukaD415' }
   ],
-  resume: '/Dinuka-Dilshan-Athapaththu-CV.pdf', // Add your CV PDF to public/
-  photo: '/profile.png', // Add your photo to public/ (square image, ~800×800 works best)
+  resume: '/DinukaDilshanAthapaththu_Resume.pdf', // Add your CV PDF to public/
+  photo: '/profile.png',
   intro: 'I turn ideas into dependable, thoughtful digital experiences.',
   about: [
     "I'm a software engineer who enjoys building useful products from the first idea to the final detail. I care about clean architecture, accessible interfaces, and software that solves real problems.",
-    'My work spans Java enterprise development, modern web interfaces, APIs, databases, and cloud-native tools. I enjoy learning how the pieces fit together—and making them work well together.'
+    'My work spans Java enterprise development, modern web interfaces, APIs, databases, and cloud-native tools. I enjoy learning how the pieces fit together and making them work well together.'
   ],
   highlights: [
-    { value: '2', label: 'Professional diplomas' },
+    { value: '2', label: 'Certifications' },
     { value: '25+', label: 'Tools & technologies' },
     { value: 'BSc', label: 'Software Engineering (Hons)' }
   ],
-  availability: 'Open to internships, graduate roles & collaborations'
+  availability: 'Open to opportunities & collaborations'
 }
 
 export const navItems: NavItem[] = [
@@ -55,15 +54,39 @@ export const navItems: NavItem[] = [
 export const projects: Project[] = [
   {
     number: '01',
-    name: 'TechMart Online',
-    category: 'E-commerce platform',
+    name: 'GlobalTrade Logistics',
+    category: 'Supply Chain Management System',
     description:
-      'An online shopping platform with product discovery, shopping cart and order flows, inventory-focused features, and an admin experience. Update this description to match the exact functionality you implemented.',
-    stack: ['React', 'Jakarta EE', 'MySQL', 'JMS'],
+      'An enterprise-oriented application developed as part of my Software Engineering studies to support supply chain operations, including shipment management, inventory tracking, vendor management, customs processes, alerts, and system monitoring..',
+    stack: ['React', 'Java', 'MySQL', 'REST APIs', 'Software Architectural Design'],
     status: 'Featured project',
-    github: 'https://github.com/DinukaDilshan415', // Replace with the specific TechMart repository URL
-    demo: '', // Add the deployed website URL when available
-    visual: 'shop'
+    github: 'https://lnkd.in/p/gGbKXBF4',
+    visual: 'shop',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQF4VgmYbSO_kQ/profile-treasury-image-shrink_800_800/B56aF90y4fKoAI-/0/1793112354694?e=1795618800&v=beta&t=I6goJDx5SJhXHbcO2m3e7zthmHd7g0BmjmCKTBN3fRY'
+  },
+  {
+    number: '02',
+    name: 'GuideMe',
+    category: 'Platform for Tourism Guide and Booking',
+    description:
+      'GuideMe is a full-stack mobile application. The project was designed to bridge the digital gap between local tourism service providers and travelers by bringing hotels, activities, and other travel-related services together in one mobile marketplace.',
+    stack: ['Android Development', 'Java', 'MySQL', 'REST APIs', 'Full-Stack Development'],
+    status: 'Featured project',
+    github: 'https://lnkd.in/p/gSTpsaqe',
+    visual: 'mobile',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFsFFPSs9GUFg/profile-treasury-image-shrink_800_800/B56aF5Qp5LG4AI-/0/1793035771768?e=1795618800&v=beta&t=m77zczHyrj8MNhhCiDz2cPlZv_HfKw38JUZ93pGmy_I'
+  },
+  {
+    number: '03',
+    name: 'EduMart',
+    category: 'Academic & Office Supplies E-Commerce Platform',
+    description:
+      'EduMart is a specialized, full-stack e-commerce web application designed to eliminate the friction students and educators face when sourcing academic, school, and office supplies from fragmented or generic marketplaces.',
+    stack: ['Java', 'MySQL', 'REST APIs', 'Full-Stack Development', 'E-commerce Optimization'],
+    status: 'Featured project',
+    github: 'https://lnkd.in/p/g3-xMtbq',
+    visual: 'shop',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFilTRlL9dTmw/profile-treasury-image-shrink_800_800/B56aF2aYpXJ8AI-/0/1792987990989?e=1795618800&v=beta&t=Q8vB28zOqMWotKm235y7vUUquN5sCZ-LBS39sh_qmBY'
   }
 ]
 
@@ -82,7 +105,7 @@ export const skillGroups: SkillGroup[] = [
 // Diplomas are listed here as well as in Certifications, as requested.
 export const education: EducationItem[] = [
   {
-    period: 'April 2023 – Present',
+    period: 'April 2023 – 2027',
     qualification: 'BSc (Hons) in Software Engineering',
     institution: 'Birmingham City University, UK',
     detail: 'Undergraduate degree focused on software engineering.',
@@ -115,7 +138,6 @@ export const education: EducationItem[] = [
   }
 ]
 
-// Add `imageUrl` for each badge image and `url` for its digital copy or verification page.
 export const certifications: Certification[] = [
   {
     credential: 'Professional Higher Diploma in Software Engineering',
@@ -135,10 +157,9 @@ export const certifications: Certification[] = [
   }
 ]
 
-// EDIT: placeholder experience — replace with your real roles, internships, or freelance work.
 export const experience: ExperienceItem[] = [
   {
-    period: '2023 – Present',
+    period: '2023 – 2027',
     role: 'Software Engineering Undergraduate',
     organisation: 'Birmingham City University, UK',
     type: 'Academic',
@@ -147,18 +168,18 @@ export const experience: ExperienceItem[] = [
       'Applied object-oriented design, testing, and version control in collaborative settings.',
       'Explored cloud-native tooling with Docker, Kubernetes, and Google Cloud Platform.'
     ],
-    tools: ['Java', 'React', 'MySQL', 'Docker']
+    tools: []
   },
   {
     period: '2024 – Present',
-    role: 'Independent Developer',
+    role: 'Freelance Developer',
     organisation: 'Personal projects',
     type: 'Self-directed',
     points: [
-      'Built TechMart Online, an e-commerce platform with Jakarta EE, React, and JMS messaging.',
+      'Built a web application for a local business, e-commerce platform and content management system.',
       'Developed REST APIs and relational database schemas for real-world use cases.',
       'Experimented with Android and React Native for cross-platform mobile apps.'
     ],
-    tools: ['Jakarta EE', 'TypeScript', 'REST APIs', 'React Native']
+    tools: []
   }
 ]

@@ -61,8 +61,9 @@ The navigation also links to sections on the home page, such as `/#about`, `/#sk
 - **Theme and fonts:** Edit the theme variables and global styles in `src/index.css`.
 - **Page layout and components:** The app shell and routes are in `src/App.tsx`; reusable UI is in `src/components/`; page sections are in `src/sections/`.
 - **Profile photo:** Replace `public/profile.png` with your image, keeping the filename or updating the `photo` value in `src/data.ts`.
-- **Resume:** Add `Dinuka-Dilshan-Athapaththu-CV.pdf` to `public/`, or change the `resume` value in `src/data.ts`.
+- **Resume:** Add your PDF to `public/` and update `src/data.ts`. On Vercel, keep the matching `Content-Disposition: inline` header in `vercel.json` so the PDF opens in the browser viewer.
 - **Certificate images:** Set each certification's `imageUrl` in `src/data.ts`; its `url` field points to the digital copy or verification page.
+- **Project images:** Set a project's optional `imageUrl` in `src/data.ts` to an image URL. Projects without one keep their generated artwork.
 - **Site title and description:** Update the metadata in `index.html`.
 
 ## Project structure
