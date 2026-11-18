@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import {useEffect, useState } from 'react'
 import type { IconType } from 'react-icons'
 import { SiFacebook, SiInstagram, SiWhatsapp, SiX, SiYoutube } from 'react-icons/si'
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
@@ -97,7 +97,7 @@ export default function App() {
       <CustomCursor />
       <Navbar items={navItems} active={active} brand={profile.shortName} theme={theme} onToggleTheme={toggleTheme} />
 
-      <main className="relative z-[1]">
+      <main className="relative z-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/certifications" element={<Certifications items={certifications} />} />
@@ -107,7 +107,7 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="relative z-[1] border-t border-line">
+      <footer className="relative z-1 border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-muted sm:flex-row sm:px-8">
           <p>
             © {new Date().getFullYear()} {profile.name}

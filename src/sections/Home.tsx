@@ -21,10 +21,10 @@ function Portrait({ profile }: HomeProps) {
   return (
     <div className="relative mx-auto w-64 sm:w-72 lg:w-80">
       {/* offset frame */}
-      <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] border border-coral/60" />
-      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-card shadow-[0_30px_60px_-30px_rgba(28,36,48,0.35)]">
+      <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-4xl border border-coral/60" />
+      <div className="relative aspect-4/5 overflow-hidden rounded-4xl border border-line bg-card shadow-[0_30px_60px_-30px_rgba(28,36,48,0.35)]">
         {failed ? (
-          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-sage-soft via-card to-coral-soft">
+          <div className="grid h-full w-full place-items-center bg-linear-to-br from-sage-soft via-card to-coral-soft">
             <span className="font-display text-7xl font-semibold tracking-tight text-ink/80">
               {initials(profile.name)}
             </span>

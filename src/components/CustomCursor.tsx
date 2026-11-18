@@ -80,7 +80,7 @@ export default function CustomCursor() {
 
   return (
     <div aria-hidden="true" className={`transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-      <div ref={ringRef} className="pointer-events-none fixed top-0 left-0 z-[100]">
+      <div ref={ringRef} className="pointer-events-none fixed top-0 left-0 z-100">
         <div
           className={`rounded-full border transition-[width,height,background-color,border-color,transform] duration-300 ease-out ${
             hovering ? 'border-coral bg-coral/10' : 'border-ink/40'
@@ -92,7 +92,7 @@ export default function CustomCursor() {
           }}
         />
       </div>
-      <div ref={dotRef} className="pointer-events-none fixed top-0 left-0 z-[101]">
+      <div ref={dotRef} className="pointer-events-none fixed top-0 left-0 z-101">
         <div
           className={`h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full transition-colors ${
             hovering ? 'bg-coral' : 'bg-ink'

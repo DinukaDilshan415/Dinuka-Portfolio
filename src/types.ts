@@ -52,6 +52,7 @@ export interface Project {
   status: string
   github: string
   demo?: string
+  imageUrl?: string
   visual: ProjectVisual
 }
 

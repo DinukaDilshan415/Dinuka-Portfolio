@@ -27,7 +27,7 @@ export default function Education({ items }: EducationProps) {
             const kind = kindStyle[item.kind]
             return (
               <li key={item.qualification} className="reveal relative pb-12 pl-8 last:pb-0 sm:pl-12">
-                <span className="absolute top-1.5 -left-[7px] h-3.5 w-3.5 rounded-full border-2 border-paper bg-coral ring-1 ring-coral/40" />
+                <span className="absolute top-1.5 -left-1.75 h-3.5 w-3.5 rounded-full border-2 border-paper bg-coral ring-1 ring-coral/40" />
                 <div className="grid gap-3 sm:grid-cols-[12rem_1fr] sm:gap-8">
                   <p className="font-mono text-xs leading-6 text-muted">{item.period}</p>
                   <div className="rounded-2xl border border-line bg-card/70 p-6 transition-shadow hover:shadow-[0_20px_40px_-28px_rgba(28,36,48,0.4)]">
