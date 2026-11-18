@@ -1,0 +1,1 @@
+Put your profile photo in this folder as profile.jpg. See ../README-ASSETS.txt for setup.
