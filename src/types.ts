@@ -16,6 +16,12 @@ export interface NavItem {
   to: string
 }
 
+export interface ResumeOption {
+  label: string
+  description: string
+  file: string
+}
+
 export interface Profile {
   name: string
   shortName: string
@@ -28,6 +34,8 @@ export interface Profile {
   socialLinks: FooterSocialLink[]
   /** Path to the CV inside `public/`, opened in a new browser tab. */
   resume: string
+  /** Résumé choices shown by the View Resume button. */
+  resumes: ResumeOption[]
   /** Path to the profile photo inside `public/`. Falls back to initials if missing. */
   photo: string
   intro: string
