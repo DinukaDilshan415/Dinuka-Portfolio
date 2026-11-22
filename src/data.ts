@@ -12,8 +12,8 @@ import type {
 export const profile: Profile = {
   name: 'Dinuka Dilshan Athapaththu',
   shortName: 'Dinuka',
-  title: 'Software Engineer',
-  location: '',
+  title: 'Software Engineering | IT Support & Systems',
+  location: 'Sri Lanka',
   email: 'dinukadilshan8026@gmail.com',
   github: 'https://github.com/DinukaDilshan415',
   linkedin: 'https://www.linkedin.com/in/dinuka-dilshan-athapaththu/',
@@ -25,16 +25,28 @@ export const profile: Profile = {
     { label: 'YouTube', href: 'https://www.youtube.com/' },
     { label: 'X', href: 'https://x.com/DinukaD415' }
   ],
-  resume: '/DinukaDilshanAthapaththu_Resume.pdf', // Add your CV PDF to public/
+  resume: '/Dinuka-Dilshan-IT-Resume.pdf',
+  resumes: [
+    {
+      label: 'Software Engineering',
+      description: 'For software and development roles',
+      file: '/DinukaDilshanAthapaththu_Resume.pdf'
+    },
+    {
+      label: 'Other IT',
+      description: 'For IT and technical roles',
+      file: '/Dinuka-Dilshan-IT-Resume.pdf'
+    }
+  ],
   photo: '/profile.png',
-  intro: 'I turn ideas into dependable, thoughtful digital experiences.',
+  intro: 'I diagnose and resolve technical problems, build dependable systems, and turn complex solutions into clear support for users.',
   about: [
-    "I'm a software engineer who enjoys building useful products from the first idea to the final detail. I care about clean architecture, accessible interfaces, and software that solves real problems.",
-    'My work spans Java enterprise development, modern web interfaces, APIs, databases, and cloud-native tools. I enjoy learning how the pieces fit together and making them work well together.'
+    "I'm a Software Engineering graduate with hands-on experience in computer hardware, Windows systems, networking, and troubleshooting. I enjoy diagnosing problems, maintaining systems, and helping people get back to work.",
+    'My technical foundation includes React and Java enterprise development, REST APIs, databases, cloud tools, and mobile applications. I combine practical IT support with development experience to deliver reliable solutions.'
   ],
   highlights: [
     { value: '2', label: 'Certifications' },
-    { value: '25+', label: 'Tools & technologies' },
+    { value: 'IT', label: 'Hardware, systems & support' },
     { value: 'BSc', label: 'Software Engineering (Hons)' }
   ],
   availability: 'Open to opportunities & collaborations'
@@ -54,11 +66,11 @@ export const navItems: NavItem[] = [
 export const projects: Project[] = [
   {
     number: '01',
-    name: 'GlobalTrade Logistics',
+    name: 'Supply Chain Management System',
     category: 'Supply Chain Management System',
     description:
-      'An enterprise-oriented application developed as part of my Software Engineering studies to support supply chain operations, including shipment management, inventory tracking, vendor management, customs processes, alerts, and system monitoring..',
-    stack: ['React', 'Java', 'MySQL', 'REST APIs', 'Software Architectural Design'],
+      'An enterprise system with JWT authentication, role-based access, automated alerts, scheduled database backups, and centralised logging.',
+    stack: ['Jakarta EE', 'React', 'MySQL', 'JWT', 'REST APIs'],
     status: 'Featured project',
     github: 'https://lnkd.in/p/gGbKXBF4',
     visual: 'shop',
@@ -67,10 +79,10 @@ export const projects: Project[] = [
   {
     number: '02',
     name: 'GuideMe',
-    category: 'Platform for Tourism Guide and Booking',
+    category: 'Tourism Booking App',
     description:
-      'GuideMe is a full-stack mobile application. The project was designed to bridge the digital gap between local tourism service providers and travelers by bringing hotels, activities, and other travel-related services together in one mobile marketplace.',
-    stack: ['Android Development', 'Java', 'MySQL', 'REST APIs', 'Full-Stack Development'],
+      'A mobile booking application with online payments, push notifications, Google Maps integration, and admin tools for user access management.',
+    stack: ['Android', 'Firebase', 'Google Maps', 'REST APIs'],
     status: 'Featured project',
     github: 'https://lnkd.in/p/gSTpsaqe',
     visual: 'mobile',
@@ -79,10 +91,10 @@ export const projects: Project[] = [
   {
     number: '03',
     name: 'EduMart',
-    category: 'Academic & Office Supplies E-Commerce Platform',
+    category: 'E-Commerce Platform',
     description:
-      'EduMart is a specialized, full-stack e-commerce web application designed to eliminate the friction students and educators face when sourcing academic, school, and office supplies from fragmented or generic marketplaces.',
-    stack: ['Java', 'MySQL', 'REST APIs', 'Full-Stack Development', 'E-commerce Optimization'],
+      'A full-stack web shop with an admin dashboard for inventory, orders, payments, and user role management.',
+    stack: ['React', 'TypeScript', 'Java', 'MySQL', 'REST APIs'],
     status: 'Featured project',
     github: 'https://lnkd.in/p/g3-xMtbq',
     visual: 'shop',
@@ -91,14 +103,14 @@ export const projects: Project[] = [
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { title: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'HTML5', 'CSS3'] },
+  { title: 'IT Support & Systems', items: ['Windows', 'Hardware', 'Networking', 'Microsoft Office', 'Troubleshooting', 'LAN & Wi-Fi'] },
   {
-    title: 'Backend & Databases',
-    items: ['Jakarta EE', 'Spring Boot', 'Java', 'Node.js', 'REST APIs', 'MySQL', 'PostgreSQL', 'SQLite', 'Firebase']
+    title: 'Development',
+    items: ['React', 'JavaScript', 'TypeScript', 'Java', 'Spring Boot', 'Node.js', 'REST APIs', 'Android']
   },
   {
-    title: 'Tools & Other',
-    items: ['Python', 'C++', 'Google Cloud Platform', 'Docker', 'Kubernetes', 'Git', 'GitHub', 'Postman', 'Android', 'React Native']
+    title: 'Databases & Tools',
+    items: ['MySQL', 'PostgreSQL', 'SQLite', 'Firebase', 'Python', 'C++', 'Google Cloud Platform', 'Docker', 'Kubernetes', 'Git', 'GitHub']
   },
 ]
 
@@ -159,21 +171,22 @@ export const certifications: Certification[] = [
 
 export const experience: ExperienceItem[] = [
   {
-    period: '2023 – 2027',
-    role: 'Software Engineering Undergraduate',
-    organisation: 'Birmingham City University, UK',
-    type: 'Academic',
+    period: 'Ongoing',
+    role: 'IT Support',
+    organisation: 'Independent · Nawalapitiya, Sri Lanka',
+    type: 'Independent',
     points: [
-      'Designed and built full-stack applications as part of coursework and team projects.',
-      'Applied object-oriented design, testing, and version control in collaborative settings.',
-      'Explored cloud-native tooling with Docker, Kubernetes, and Google Cloud Platform.'
+      'Assembled, upgraded, and maintained desktop PCs and laptops.',
+      'Installed and configured Windows, device drivers, Microsoft Office, and everyday software.',
+      'Diagnosed hardware, software, and performance issues for non-technical users.',
+      'Set up home and small-office Wi-Fi networks and routers and resolved connectivity problems.'
     ],
-    tools: []
+    tools: ['Windows', 'Hardware', 'Networking', 'Troubleshooting']
   },
   {
     period: '2024 – Present',
     role: 'Freelance Developer',
-    organisation: 'Personal projects',
+    organisation: 'Self-directed · Remote',
     type: 'Self-directed',
     points: [
       'Built a web application for a local business, e-commerce platform and content management system.',

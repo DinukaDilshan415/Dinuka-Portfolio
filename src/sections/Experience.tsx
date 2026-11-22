@@ -20,7 +20,7 @@ export default function Experience({ items, previewLimit, viewAllTo }: Experienc
             index="04"
             eyebrow="Experience"
             title="What I've been working on"
-            description="Hands-on work across academic, team, and personal projects."
+            description="Hands-on IT support, systems troubleshooting, and software development."
           />
           {viewAllTo && (
             <Link

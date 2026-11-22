@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Profile } from '../types'
 import { ArrowUpRight, DocumentIcon, GitHubIcon, LinkedInIcon, PinIcon } from '../components/Icons'
 
@@ -44,6 +44,26 @@ function Portrait({ profile }: HomeProps) {
 
 export default function Home({ profile }: HomeProps) {
   const [first, ...rest] = profile.name.split(' ')
+  const [resumeMenuOpen, setResumeMenuOpen] = useState(false)
+  const resumeMenuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const closeMenu = (event: MouseEvent) => {
+      if (!resumeMenuRef.current?.contains(event.target as Node)) {
+        setResumeMenuOpen(false)
+      }
+    }
+    const closeMenuWithEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setResumeMenuOpen(false)
+    }
+
+    document.addEventListener('mousedown', closeMenu)
+    document.addEventListener('keydown', closeMenuWithEscape)
+    return () => {
+      document.removeEventListener('mousedown', closeMenu)
+      document.removeEventListener('keydown', closeMenuWithEscape)
+    }
+  }, [])
 
   return (
     <section id="home" className="relative flex min-h-screen items-center pt-24 pb-16">
@@ -63,16 +83,42 @@ export default function Home({ profile }: HomeProps) {
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">{profile.intro}</p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <a
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-all hover:-translate-y-0.5 hover:bg-coral"
-            >
-              <DocumentIcon />
-              View Resume
-              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            <div ref={resumeMenuRef} className="relative">
+              <button
+                type="button"
+                aria-haspopup="menu"
+                aria-expanded={resumeMenuOpen}
+                onClick={() => setResumeMenuOpen((open) => !open)}
+                className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper transition-all hover:-translate-y-0.5 hover:bg-coral"
+              >
+                <DocumentIcon />
+                View Resume
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </button>
+
+              {resumeMenuOpen && (
+                <div
+                  role="menu"
+                  aria-label="Choose a resume"
+                  className="absolute left-0 z-30 mt-2 w-72 overflow-hidden rounded-2xl border border-line bg-card p-1.5 shadow-[0_18px_50px_-18px_rgba(28,36,48,0.45)]"
+                >
+                  {profile.resumes.map((resume) => (
+                    <a
+                      key={resume.file}
+                      role="menuitem"
+                      href={resume.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setResumeMenuOpen(false)}
+                      className="flex flex-col rounded-xl px-4 py-3 transition-colors hover:bg-coral-soft"
+                    >
+                      <span className="text-sm font-medium text-ink">{resume.label}</span>
+                      <span className="mt-0.5 text-xs text-muted">{resume.description}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-ink"

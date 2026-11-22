@@ -66,7 +66,7 @@ export default function Skills({ groups }: SkillsProps) {
           index="06"
           eyebrow="Skills"
           title="Technologies"
-          description="Languages, frameworks, and platforms I use to bring ideas to life."
+          description="IT systems, development languages, frameworks, and tools I use."
         />
         <div aria-hidden="true" className="skills-marquee space-y-8">
           {groups.map((group, rowIndex) => (
