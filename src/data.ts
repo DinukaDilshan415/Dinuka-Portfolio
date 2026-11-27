@@ -74,7 +74,7 @@ export const projects: Project[] = [
     status: 'Featured project',
     github: 'https://lnkd.in/p/gGbKXBF4',
     visual: 'shop',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQF4VgmYbSO_kQ/profile-treasury-image-shrink_800_800/B56aF90y4fKoAI-/0/1793112354694?e=1795618800&v=beta&t=I6goJDx5SJhXHbcO2m3e7zthmHd7g0BmjmCKTBN3fRY'
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQF4VgmYbSO_kQ/profile-treasury-image-shrink_1280_1280/B56aF90y4fKoAY-/0/1793112354694?e=1796407200&v=beta&t=ZA6o93x2iWl55fi8v2oCTdOFJakD-03c14DUYpUWEUY'
   },
   {
     number: '02',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     status: 'Featured project',
     github: 'https://lnkd.in/p/gSTpsaqe',
     visual: 'mobile',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFsFFPSs9GUFg/profile-treasury-image-shrink_800_800/B56aF5Qp5LG4AI-/0/1793035771768?e=1795618800&v=beta&t=m77zczHyrj8MNhhCiDz2cPlZv_HfKw38JUZ93pGmy_I'
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFsFFPSs9GUFg/profile-treasury-image-shrink_1920_1920/B56aF5Qp5LG4Ac-/0/1793035771769?e=1796407200&v=beta&t=Nq_w-VcrrPMFcwbJCVJ6I_kDY_8tbLb7eDd5J-zVQlg'
   },
   {
     number: '03',
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     status: 'Featured project',
     github: 'https://lnkd.in/p/g3-xMtbq',
     visual: 'shop',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFilTRlL9dTmw/profile-treasury-image-shrink_800_800/B56aF2aYpXJ8AI-/0/1792987990989?e=1795618800&v=beta&t=Q8vB28zOqMWotKm235y7vUUquN5sCZ-LBS39sh_qmBY'
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D562DAQFilTRlL9dTmw/profile-treasury-image-shrink_1280_1280/B56aF2aYpXJ8AY-/0/1792987990989?e=1796407200&v=beta&t=Ut-OonO1SOyaOBUXu6pQR69xDbdDQiDEXj7yq44DFsM'
   }
 ]
 
